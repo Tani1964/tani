@@ -30,6 +30,7 @@ import tesla from "./company/tesla.png";
 
 import carrent from "./carrent.png";
 import carrent1 from "./carrent1.png";
+import carrent2 from "./carrent2.png";
 import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
@@ -62,6 +63,7 @@ export {
   tesla,
   carrent,
   carrent1,
+  carrent2,
   jobit,
   tripguide,
   waves,

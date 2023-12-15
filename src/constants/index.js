@@ -24,6 +24,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    carrent2,
   } from "../assets";
   
   export const navLinks = [
@@ -233,6 +234,23 @@ import {
       ],
       image: carrent1,
       source_code_link: "https://github.com/Tani1964/family-tree",
+    },
+    {
+      name: "Manage",
+      description:
+        "Landing page for a software company",
+      tags: [
+        {
+          name: "HTML",
+          color: "blue-text-gradient",
+        },
+        {
+          name: "CSS",
+          color: "green-text-gradient",
+        },
+      ],
+      image: carrent2,
+      source_code_link: "https://github.com/Tani1964/cracker_factory",
     },
   ];
   
