@@ -30,14 +30,16 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
+    let m = import.meta.env.VITE_APP_EMAILJS_PUBLIC_KEY
 
+    console.log(m)
     emailjs
       .send(
         import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
         import.meta.env.VITE_APP_EMAILJS_TEMPLATE_ID,
         {
           from_name: form.name,
-          to_name: "Tani",
+          to_name: "Tanitoluwa Ifegbesan",
           from_email: form.email,
           to_email: "ifegbesan6@gmail.com",
           message: form.message,
