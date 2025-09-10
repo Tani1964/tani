@@ -102,34 +102,13 @@ const experiences = [
       "Increased knowledge retention rates by 40% through tailored teaching strategies.",
     ],
   },
+  
   {
-    title: "Community & Tech Advisor",
-    company_name: "Noxie Limited",
-    icon: noxie,
-    iconBg: "#383E56",
-    date: "Aug 2023 - Sep 2023",
-    points: [
-      "Shaped the digital presence strategy for the company’s restaurant launch.",
-      "Contributed to a 20% increase in online engagement and community reach.",
-    ],
-  },
-  {
-    title: "Program Coordinator",
-    company_name: "Oxosi-ani",
-    icon: "",
-    iconBg: "#E6DEDD",
-    date: "Jun 2022 - Aug 2022",
-    points: [
-      "Generated reports contributing to a 15% increase in efficiency of partner company operations.",
-      "Strategized for the market launch, resulting in a successful introduction with increased online visibility.",
-    ],
-  },
-  {
-    title: "President",
+    title: "Assistant Software Director",
     company_name: "NACOS (Nigeria Association of Computing Students)",
     icon: "",
     iconBg: "#383E56",
-    date: "Jan 2020 - Dec 2021",
+    date: "Aug 2025 - PRESENT",
     points: [
       "Oversaw academic and professional programs that impacted 300+ computing students.",
       "Introduced skill-based workshops and coding challenges to boost technical readiness.",
@@ -137,11 +116,11 @@ const experiences = [
     ],
   },
   {
-    title: "Volunteer Coordinator",
+    title: "Volunteer Web Development Tutor",
     company_name: "Selfless Heart Foundation",
     icon: "",
     iconBg: "#E6DEDD",
-    date: "May 2019 - Dec 2020",
+    date: "April 2024 - August 2025",
     points: [
       "Coordinated outreach programs that provided educational support and resources to underprivileged children.",
       "Mobilized a team of 20+ volunteers to deliver impact-driven community projects.",
