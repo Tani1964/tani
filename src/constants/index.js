@@ -95,7 +95,7 @@ const experiences = [
     company_name: "CAMA Academy",
     icon: "",
     iconBg: "#E6DEDD",
-    date: "Feb 2023 - Oct 2023",
+    date: "Feb 2023 - PRESENT",
     points: [
       "Guided 100+ students in fullstack development through structured mentorship.",
       "Boosted student satisfaction scores from 65% to 95%.",
