@@ -1,257 +1,235 @@
 import {
-    mobile,
-    backend,
-    creator,
-    web,
-    javascript,
-    typescript,
-    html,
-    css,
-    reactjs,
-    redux,
-    tailwind,
-    nodejs,
-    mongodb,
-    git,
-    figma,
-    docker,
-    meta,
-    swyi,
-    tesla,
-    noxie,
-    carrent,
-    carrent1,
-    jobit,
-    tripguide,
-    threejs,
-    carrent2,
-  } from "../assets";
-  
-  export const navLinks = [
-    {
-      id: "about",
-      title: "About",
-    },
-    {
-      id: "work",
-      title: "Work",
-    },
-    {
-      id: "contact",
-      title: "Contact",
-    },
-  ];
-  
-  const services = [
-    {
-      title: "Web Developer",
-      icon: web,
-    },
-    {
-      title: "React Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
-  
-  const technologies = [
-    {
-      name: "HTML 5",
-      icon: html,
-    },
-    {
-      name: "CSS 3",
-      icon: css,
-    },
-    {
-      name: "JavaScript",
-      icon: javascript,
-    },
-    {
-      name: "TypeScript",
-      icon: typescript,
-    },
-    {
-      name: "React JS",
-      icon: reactjs,
-    },
-    {
-      name: "Redux Toolkit",
-      icon: redux,
-    },
-    {
-      name: "Tailwind CSS",
-      icon: tailwind,
-    },
-    {
-      name: "Node JS",
-      icon: nodejs,
-    },
-    {
-      name: "MongoDB",
-      icon: mongodb,
-    },
-    {
-      name: "Three JS",
-      icon: threejs,
-    },
-    {
-      name: "git",
-      icon: git,
-    },
-    {
-      name: "figma",
-      icon: figma,
-    },
-  ];
-  
-  const experiences = [
-    {
-      title: "Vice President",
-      company_name: "SWYI",
-      icon: swyi,
-      iconBg: "#383E56",
-      date: "March 2021 - Present",
-      points: [
-       
-      ],
-    },
-    {
-      title: "FullStack Web developer",
-      company_name: "CAMA Academy",
-      icon: "",
-      iconBg: "#E6DEDD",
-      date: "Feb 2023 - PRESENT",
-      points: [
-        "Remodeled their website for them making them gain more reach to customers.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other the board.",
-      ],
-    },
-    {
-      title: "FullStack Web tutor [contract]",
-      company_name: "CAMA Academy",
-      icon: "",
-      iconBg: "#E6DEDD",
-      date: "AUG 2023 - OCT 2023",
-      points: [
-        "Increased student satisfaction scores from 65% to 95% and boosted knowledge retention rates from 60% to 85% through strategic changes implemented during the course, resulting in a remarkable 40% overall improvement.",
-        "Participating in code reviews of students, mentoring them and providing constructive feedback to the board.",
-      ],
-    },
-    {
-      title: "Web Developer",
-      company_name: "NOXIE",
-      icon: noxie,
-      iconBg: "#383E56",
-      date: "AUG 2023 - SEP 2023",
-      points: [
-        "Worked on the launch and preparation of their new restaurant",
-        "Demonstrated proficiency in various technical domains, including graphic design, web design, and online presence architecture, contributing to the project's comprehensive success.",
-      ],
-    },
-    {
-      title: "Full stack Developer",
-      company_name: "Oxosi-ani",
-      icon: "",
-      iconBg: "#E6DEDD",
-      date: "JUN 2022 - AUG 2022",
-      points: [
-        "Generated reports contributing to a 15% increase in the efficiency of partner company Noxie Limited. Strategized for the market launch, resulting in a successful introduction with a 20% increase in online engagement.",
-      ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
-  
-  const projects = [
-    {
-      name: "Uchegbu Family tree",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "mongodb",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent,
-      source_code_link: "https://github.com/Tani1964/family-tree",
-    },
-    {
-      name: "Dashboard Practice",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "MUI",
-          color: "green-text-gradient",
-        },
-        {
-          name: "tailwind",
-          color: "pink-text-gradient",
-        },
-      ],
-      image: carrent1,
-      source_code_link: "https://github.com/Tani1964/family-tree",
-    },
-    {
-      name: "Manage",
-      description:
-        "Landing page for a software company",
-      tags: [
-        {
-          name: "HTML",
-          color: "blue-text-gradient",
-        },
-        {
-          name: "CSS",
-          color: "green-text-gradient",
-        },
-      ],
-      image: carrent2,
-      source_code_link: "https://github.com/Tani1964/cracker_factory",
-    },
-  ];
-  
-  export { services, technologies, experiences, testimonials, projects };
+  backend,
+  carrent,
+  carrent1,
+  carrent2,
+  creator,
+  figma,
+  git,
+  mobile,
+  noxie,
+  swyi,
+  web,
+} from "../assets";
+
+export const navLinks = [
+  {
+    id: "about",
+    title: "About",
+  },
+  {
+    id: "work",
+    title: "Experience",
+  },
+  {
+    id: "contact",
+    title: "Contact",
+  },
+];
+
+const services = [
+  {
+    title: "Leadership & Strategy",
+    icon: web,
+  },
+  {
+    title: "Youth Empowerment",
+    icon: mobile,
+  },
+  {
+    title: "Mentorship & Training",
+    icon: backend,
+  },
+  {
+    title: "Community Building",
+    icon: creator,
+  },
+];
+
+const technologies = [
+  {
+    name: "Strategic Planning",
+    icon: figma,
+  },
+  {
+    name: "Public Speaking",
+    icon: git,
+  },
+  {
+    name: "Team Leadership",
+    icon: web,
+  },
+  {
+    name: "Mentorship",
+    icon: mobile,
+  },
+  {
+    name: "Community Engagement",
+    icon: creator,
+  },
+  {
+    name: "Youth Empowerment",
+    icon: backend,
+  },
+  {
+    name: "Innovation & Creativity",
+    icon: noxie,
+  },
+];
+
+const experiences = [
+  {
+    title: "Vice President",
+    company_name: "SWYI",
+    icon: swyi,
+    iconBg: "#383E56",
+    date: "March 2021 - Present",
+    points: [
+      "Leading youth-focused initiatives that reached over 500+ participants across schools and communities.",
+      "Organized mentorship programs that improved member retention and impact by 40%.",
+      "Spearheaded partnerships with schools and organizations to promote empowerment and leadership.",
+    ],
+  },
+  {
+    title: "Mentor & Instructor",
+    company_name: "CAMA Academy",
+    icon: "",
+    iconBg: "#E6DEDD",
+    date: "Feb 2023 - Oct 2023",
+    points: [
+      "Guided 100+ students in fullstack development through structured mentorship.",
+      "Boosted student satisfaction scores from 65% to 95%.",
+      "Increased knowledge retention rates by 40% through tailored teaching strategies.",
+    ],
+  },
+  {
+    title: "Community & Tech Advisor",
+    company_name: "Noxie Limited",
+    icon: noxie,
+    iconBg: "#383E56",
+    date: "Aug 2023 - Sep 2023",
+    points: [
+      "Shaped the digital presence strategy for the company’s restaurant launch.",
+      "Contributed to a 20% increase in online engagement and community reach.",
+    ],
+  },
+  {
+    title: "Program Coordinator",
+    company_name: "Oxosi-ani",
+    icon: "",
+    iconBg: "#E6DEDD",
+    date: "Jun 2022 - Aug 2022",
+    points: [
+      "Generated reports contributing to a 15% increase in efficiency of partner company operations.",
+      "Strategized for the market launch, resulting in a successful introduction with increased online visibility.",
+    ],
+  },
+  {
+    title: "President",
+    company_name: "NACOS (Nigeria Association of Computing Students)",
+    icon: "",
+    iconBg: "#383E56",
+    date: "Jan 2020 - Dec 2021",
+    points: [
+      "Oversaw academic and professional programs that impacted 300+ computing students.",
+      "Introduced skill-based workshops and coding challenges to boost technical readiness.",
+      "Strengthened collaboration with industry professionals for seminars and mentorship opportunities.",
+    ],
+  },
+  {
+    title: "Volunteer Coordinator",
+    company_name: "Selfless Heart Foundation",
+    icon: "",
+    iconBg: "#E6DEDD",
+    date: "May 2019 - Dec 2020",
+    points: [
+      "Coordinated outreach programs that provided educational support and resources to underprivileged children.",
+      "Mobilized a team of 20+ volunteers to deliver impact-driven community projects.",
+      "Promoted values of compassion, service, and youth engagement in underserved areas.",
+    ],
+  },
+];
+
+const testimonials = [
+  {
+    testimonial:
+      "Their leadership transformed our youth program, bringing structure and energy that inspired everyone.",
+    name: "Sarah Johnson",
+    designation: "Program Director",
+    company: "Youth Impact Initiative",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "An outstanding mentor who genuinely cares about growth and empowerment.",
+    name: "Michael Ade",
+    designation: "Student",
+    company: "CAMA Academy",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "Their strategic guidance gave our launch direction and success we didn’t think possible.",
+    name: "Lisa Wang",
+    designation: "CEO",
+    company: "Noxie Limited",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
+
+const projects = [
+  {
+    name: "Youth Empowerment Bootcamp",
+    description:
+      "Organized a week-long bootcamp training young people in leadership, technology, and problem-solving, reaching over 200+ participants.",
+    tags: [
+      {
+        name: "leadership",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "mentorship",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent,
+    source_code_link: "#",
+  },
+  {
+    name: "Community Mentorship Program",
+    description:
+      "Designed a mentorship pipeline that paired industry experts with students, boosting retention and skill adoption rates.",
+    tags: [
+      {
+        name: "community",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "growth",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent1,
+    source_code_link: "#",
+  },
+  {
+    name: "School Outreach Initiative",
+    description:
+      "Partnered with local schools to deliver workshops on technology, personal growth, and leadership, impacting 300+ students.",
+    tags: [
+      {
+        name: "outreach",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "empowerment",
+        color: "green-text-gradient",
+      },
+    ],
+    image: carrent2,
+    source_code_link: "#",
+  },
+];
+
+export { experiences, projects, services, technologies, testimonials };
+

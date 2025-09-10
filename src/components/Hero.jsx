@@ -1,47 +1,66 @@
 import { motion } from "framer-motion";
-
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+import { EarthCanvas } from "./canvas";
 
 const Hero = () => {
   return (
-    <section className="relative w-full h-screen mx-auto ">
-      <div
-        className={`${styles.paddingX} absolute inset-0 top-[120px] max-w-7xl mx-auto flex flex-row items-start gap-5`}
-      >
-        <div className="flex flex-col justify-center items-center mt-5">
-          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
-          <div className="w-1 sm:h-80 h-40 violet-gradient" />
-        </div>
-        <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>
-            Hi, I'm <span className="text-[#915eff]">Tani</span>
-          </h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I am a frontend engineer, <br className="sm:block hidden" /> I have
-            worked with various frontend technologies and I love
-            programming😎🤵.
-          </p>
-        </div>
-      </div>
-      <div className="h-screen pt-48 md:pt-20 ">
-      <ComputersCanvas />
-      </div>
-      
+    <section className="relative w-full h-screen mx-auto overflow-hidden">
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/40 to-black/90 z-10" />
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center ">
+      <div
+        className={`${styles.paddingX} relative z-20 h-full flex flex-col justify-center items-center text-center`}
+      >
+        {/* Intro text */}
+        <motion.h1
+          initial={{ opacity: 0, y: -30 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+          className={`${styles.heroHeadText} text-white`}
+        >
+          Hi, I'm <span className="text-[#915eff]">Tani</span>
+        </motion.h1>
+
+        <motion.p
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          className={`${styles.heroSubText} mt-4 text-white-100 max-w-2xl`}
+        >
+          A community leader and volunteer, <br className="sm:block hidden" />
+          empowering youth, students, and women through mentorship, advocacy,
+          and innovation.
+        </motion.p>
+
+        {/* Call to action button */}
+        <motion.a
+          href="#about"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="mt-8 px-6 py-3 bg-[#915eff] text-white font-semibold rounded-2xl shadow-lg hover:bg-[#7b49e8] transition-colors"
+        >
+          Explore My Work
+        </motion.a>
+      </div>
+
+      {/* Earth Canvas in the background */}
+      <div className="absolute inset-0">
+        <EarthCanvas />
+      </div>
+
+      {/* Scroll indicator */}
+      <div className="absolute xs:bottom-10 bottom-24 w-full flex justify-center items-center z-20">
         <a href="#about">
-          <div className="w-[15px] md:w-[35px] h-[38px] md:h-[64px] rounded-3xl border-2 border-secondary flex justify-center items-start p-1 md:p-2">
+          <div className="w-[25px] h-[45px] md:w-[35px] md:h-[64px] rounded-3xl border-2 border-secondary flex justify-center items-start p-2">
             <motion.div
-             animate={{
-              y:[0,24,0]
-             }}
-             transition={{
-              duration: 1.5,
-              repeat: Infinity,
-              repeatType: 'loop'
-             }}
-             className="w-1 h-1 md:w-3 md:h-3 rounded-full bg-secondary md:mb-1"
+              animate={{ y: [0, 24, 0] }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+              className="w-2 h-2 md:w-3 md:h-3 rounded-full bg-secondary"
             />
           </div>
         </a>
