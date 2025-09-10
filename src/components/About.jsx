@@ -6,12 +6,14 @@ import { SectionWrapper } from "../hoc";
 import { styles } from "../styles";
 import { fadeIn, textVariant } from "../utils/motion";
 
+// Service Card
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <Tilt className="xs:w-[250px] w-full">
       <motion.div
-        variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        variants={fadeIn("up", "spring", 0.3 * index, 0.8)}
+        whileHover={{ scale: 1.05 }}
+        className="w-full bg-gradient-to-r from-[#915eff] via-purple-600 to-pink-500 p-[1px] rounded-2xl shadow-lg"
       >
         <div
           options={{
@@ -19,10 +21,14 @@ const ServiceCard = ({ index, title, icon }) => {
             scale: 1,
             speed: 450,
           }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
+          className="bg-[#1d1836] rounded-2xl py-8 px-6 min-h-[280px] flex flex-col items-center justify-center text-center hover:shadow-xl transition-shadow"
         >
-          <img src={icon} alt={title} className="w-16 h-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <img
+            src={icon}
+            alt={title}
+            className="w-16 h-16 object-contain mb-4"
+          />
+          <h3 className="text-white text-[20px] md:text-[22px] font-bold tracking-wide">
             {title}
           </h3>
         </div>
@@ -31,38 +37,52 @@ const ServiceCard = ({ index, title, icon }) => {
   );
 };
 
+// About Section
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      {/* Section Heading */}
+      <motion.div variants={textVariant()} className="text-center">
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Leadership & Impact.</h2>
+        <h2 className={styles.sectionHeadText}>
+          Leadership <span className="text-[#915eff]">& Impact</span>
+        </h2>
       </motion.div>
 
+      {/* Intro Text */}
       <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-17 max-w-3xl leading-[30px]"
+        variants={fadeIn("", "", 0.2, 1)}
+        className="mt-6 text-secondary text-[17px] max-w-4xl leading-[30px] mx-auto text-center"
       >
-        I am a community leader and volunteer passionate about empowering
-        students, women, and youth through mentorship, advocacy, and strategic
-        initiatives. Over the years, I’ve served as a{" "}
+        I am a{" "}
+        <span className="text-white font-semibold">community leader</span> and{" "}
+        <span className="text-white font-semibold">volunteer</span> passionate
+        about empowering students, women, and youth through{" "}
+        <span className="text-white font-semibold">mentorship, advocacy</span>,
+        and <span className="text-white font-semibold">strategic initiatives</span>. <br />
+        Over the years, I’ve served as a{" "}
         <span className="text-white font-semibold">
           Microsoft Learn Student Ambassador Team Lead
         </span>
         ,{" "}
         <span className="text-white font-semibold">
-          Assistant Software Director at NACOS University of Lagos.
+          Assistant Software Director at NACOS (Unilag)
         </span>
         , and{" "}
         <span className="text-white font-semibold">
-          President of the Strategic Women and Youth Institute
+          President of the Strategic Women and Youth Institute (SWYI)
         </span>
-        . My work centers on building inclusive communities, fostering innovation,
-        and creating opportunities for people to grow, learn, and thrive. Let’s
-        collaborate to create impact that goes beyond technology.
+        . <br />
+        My work centers on{" "}
+        <span className="text-white font-semibold">
+          building inclusive communities
+        </span>
+        , fostering innovation, and creating opportunities for people to grow,
+        learn, and thrive.
       </motion.p>
 
-      <div className="mt-20 flex flex-wrap gap-10">
+      {/* Services */}
+      <div className="mt-16 flex flex-wrap justify-center gap-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

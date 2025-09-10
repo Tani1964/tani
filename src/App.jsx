@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom"
-import { About, Contact,Feedbacks, Hero,Navbar, Tech, Works, StarsCanvas, Experience} from './components'
-import {waves, backdrop} from './assets'
+import { backdrop, waves } from './assets'
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works } from './components'
 
 const App = () => {
   return (
@@ -16,7 +16,7 @@ const App = () => {
 
         <img className=" w-full border-2  h-1/2 -mt-[200px]" src={waves} alt="" />
         </div> */}
-        <Tech/>
+        {/* <Tech/> */}
         <Works/>
         {/* <Feedbacks/> */}
         <div className="relative z-0">
